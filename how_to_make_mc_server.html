@@ -1,0 +1,55 @@
+
+<html>
+
+<body background="black.jpg">
+
+  <font color="white">
+
+<h2 style="text-align: center;">How to make a Minecraft server on Windows</h2>
+<p style="text-align: center;"><strong>At a very high level, making a Minecraft server follows a few basic steps:</strong></p>
+<h4 style="text-align: center;">Install the latest version of Java</h4>
+<h4 style="text-align: center;">Install the latest version of the Minecraft server software</h4>
+<h4 style="text-align: center;">Configure your server &amp; network</h4>
+<h4 style="text-align: center;">Start the server</h4>
+<h4 style="text-align: center;">Check that your server is accessible</h4>
+<h2 style="text-align: center;">Make a Minecraft server on your Windows PC</h2>
+<h4>1. Get the latest version of Java.</h4>
+<p>Open the Windows Control Panel. Under Programs, look for Java, and click Update Now.</p>
+<p>Open a command prompt and enter <strong><code><span style="text-decoration: underline;">java -version</span></code></strong>. You should see a version number.</p>
+<p><a href="https://www.java.com/en/download/" target="_blank" rel="noopener nofollow" data-wpel-link="external">Or simply download java from here.</a></p>
+<h4>2. Choose a location for your Minecraft server files.</h4>
+<p>Before you download the Minecraft server software, choose a location on your PC where you&rsquo;d like to run the server from.</p>
+<p>When you first run the server, it will create a few configuration files. It&rsquo;s best to have all of these files stored in a dedicated folder.</p>
+<p>You could place this folder on your Desktop, anywhere else you&rsquo;d like.</p>
+<h4>3. Download and start the Minecraft server software.</h4>
+<p><a href="https://papermc.io/downloads" target="_blank" rel="noopener nofollow" data-wpel-link="external">Download the server software from the PaperMC website.</a> It comes as a Java .jar file. Save it to the location you chose in the previous step.</p>
+<p>Double-click the .jar file to start the server. It&rsquo;ll create the server configuration files, which need to be modified before the server is ready to use.</p>
+<p><strong>Accept the EULA</strong>: A text file called <code>eula.txt</code> was created. Open the file in a text editor and change <code>eula=false</code> to <code>eula=true</code>.&nbsp;</p>
+<h4>4. Enable port forwarding on your router.</h4>
+<p>If you&rsquo;re just hosting a server for players on your local network, you don&rsquo;t need to worry about port forwarding. If, however, you want to make your server accessible to the world, you&rsquo;ll need to enable port forwarding on your router.</p>
+<p>Refer to your router&rsquo;s documentation to find specific instructions on how to configure port forwarding for your device. For Minecraft, you&rsquo;ll need to forward TCP port <code>25565</code>. (<a href="https://youtu.be/IXreJu3TE-4" target="_blank">This youtube tutorial might be helpful</a>)</p>
+<p>You&rsquo;ll also need to enter your server&rsquo;s local IP address as the Output IP or Server IP for the forwarded port. This tells the router which device to point at. To find your server&rsquo;s local IP, open a command prompt and enter <code>ipconfig</code>.</p>
+<h4>5. Start the Minecraft server.</h4>
+<p>To start the Minecraft server, open the Windows command prompt.</p>
+<p>Navigate to the file path where the Minecraft server file (named something like &ldquo;paper-spigot.jar&rdquo;) was installed.</p>
+<p>Start the server with the following command:</p>
+<p><code>java -Xmx1024M -Xms1024M -jar {server file name with extension .jar} nogui</code></p>
+<p>(Replace {server file name} with the actual server file name.)</p>
+<p>If you&rsquo;d rather use the server&rsquo;s UI, dont include the &ldquo;nogui&rdquo; parameter:</p>
+<p><code>java -Xmx1024M -Xms1024M -jar {server file name}</code></p>
+<p>You can also create a .bat file to batch the commands together.</p>
+<p>Once the server is running, you can invite others to connect to your server via your local IP address if they&rsquo;re on your home network, or via your external/public IP address if they&rsquo;re not on your home network.</p>
+<p>You can find your public IP address by <a href="https://ipchicken.com/">going to </a>ipchicken<a href="https://ipchicken.com/"> website</a>.</p>
+<p>To check if your server is accessible, enter your public IP address into the <a href="https://mcsrvstat.us/" target="_blank" rel="noopener nofollow" data-wpel-link="external">Minecraft Server Status Checker</a>.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+</font>
+
+
+</body>
+
+
+
+</html>
+
