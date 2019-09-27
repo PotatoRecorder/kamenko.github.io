@@ -114,12 +114,14 @@
         MinecraftAPI.prototype['getServerStatus'] = MinecraftAPI.prototype.getServerStatus;
 
         /**
+        *DA ME POTSETI ZA OPCIJE SA MC API
          * Gets all available query information of a Minecraft server
          * @param  {String}   ip       ip or domain of server
          * @param  {Object}   options  extra options, such as port
          * @param  {Function} callback callback function
          * @return {undefined}            does not return
          */
+        
         MinecraftAPI.prototype.getServerQuery = function (ip, options, callback) {
             if (typeof (options) === 'function') {
                 callback = options;
@@ -139,10 +141,10 @@
 }());
 </script>
     <div class="server-status">
-      My awesome server is currently <span class="server-online"></span>!
+      ViflCraft server is currently <span class="server-online"></span>!
     </div>
     <script>
-      MinecraftAPI.getServerStatus('s.nerd.nu', {
+      MinecraftAPI.getServerStatus('play.viflcraft.us.to', {
         port: 25565 // optional, only if you need a custom port
       }, function (err, status) {
         if (err) {
@@ -150,6 +152,6 @@
         }
 
         // you can change these to your own message!
-        document.querySelector('.server-online').innerHTML = status.online ? 'up' : 'down';
+        document.querySelector('.server-online').innerHTML = status.online ? 'Online' : 'Offline';
       });
     </script>
